@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transaction</title>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			font-size: 50px;
+		    padding: 50px 50px;
+		    text-decoration: underline;
+		    color:yellow;
+		    text-shadow: 2px 2px black;
+		}
+		#logo{
+			color: orange;
+			font-size: 30px;
+			text-shadow: 1px 1px black;
+			font-weight: bold;
+		}
+		div img{
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			border:2px solid blue;
+
+		}
+		form{
+
+			justify-content: center;
+			text-align: center;
+		}
+		body{
+			background-image: url('lcus.jpg');
+			background-repeat: no-repeat;
+			background-size: auto;
+		}
+		label{
+			color: black;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+  <div id="logo">
+  	<img src="logo.png">TSF BANK
+  </div>	
+<h1> Transaction </h1>
+<form action="trans.php" method="post">
+	<div>
+		<label>Sender:</label>
+	<input type="number" name="from" placeholder="Sender's Account Number">
+</div>
+<br>
+<br>
+<div>
+	<label>Receiver:</label>
+	<input type="number" name="to" placeholder="Receiver's Account Number">
+</div>
+<br>
+<br>
+<div>
+	<label>Amount:</label>
+	<input type="number" name="amount" placeholder="Amount">
+</div>
+<br>
+<button>Transfer</button>
+<button><a href="all_records.php">back</a></button>
+</form>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

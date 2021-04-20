@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="URF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+          Login
+        </title>
+        <style type="text/css">
+          label{
+            font-size: 20px;
+            font-weight: bold;
+          }
+          form{
+            width: 500px;
+            margin-left: 30%;
+            justify-content: center;
+            text-align: center;
+            color: yellow;
+            text-shadow: 3px 3px black;
+          }
+          body{
+            background-image:  url('sign.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+          }
+          h1{
+            color: yellow;
+            text-decoration:underline;
+            text-shadow:  3px 3px black;
+          }
+          h1:hover{
+            color: white;
+            text-shadow: 2px 2px black;
+          }
+         a{
+          color: yellow;
+          font-size: 20px;
+          text-shadow: 2px 2px black;
+         }
+         label:hover{
+          color:white;
+          text-shadow: 1px 1px black;
+         }
+         div img{
+          width:80px;
+          height: 80px;
+          border:2px solid navy;
+          border-radius: 50%;
+         }
+         #logo{
+          color:orange;
+          font-size: 30px;
+          text-shadow: 2px 2px black;
+          font-weight: bold;
+         }
+
+        </style>
+     </head>
+
+    <body>
+      
+      <div id="logo">
+        <img src=logo.png id="log"> TSF BANK
+      </div>
+        <div align="center">
+        <h1> LOGIN</h1>
+        </div>
+    <form action="detail_entry.php" method="post" id="form">
+    
+        <label> Account Number: </label> 
+        <input type="number" name="account"> 
+        <br>
+        <br>
+        <br>
+        <label>First Name: </label> 
+         <input type="text" name="first_name"> 
+         <br>
+         <br>
+        <br>
+         <label>Last Name: </label> 
+         <input type="text" name="last_name"> 
+         <br>
+         <br>
+        <br>
+        <label> Gender: </label>
+         <input type="radio" name="gender" value="male" > Male
+         <input type="radio" name="gender" value="female">Female</td> 
+       <br>
+       <br>
+        <br>
+        <label>Email Id:</label> 
+         <input type="email" name="email"> 
+         <br>
+         <br>
+        <br>
+        <label> Mobile Number:</label> 
+       <input type="phone" name="phone"> 
+       <br>
+       <br>
+        <br>
+        <label> Bank Balance:</label>
+        <input type="phone" name="balance">
+        <br>
+        <br>
+        <br>
+      <input type="submit" name="save"  value="Submit"> 
+
+      <a href="index.html" target="_parent" id="bk">back</a>
+        </form> 
+    </body>
+  </html>

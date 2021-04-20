@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding:0;
+}
+.nlist {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+.nlist li{
+	width: 50%;
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+ } 
+ .nlist div{
+ 	font-size:30px;
+ 	font-weight: bold;
+ 	color:orange;
+ 	text-shadow: 3px 4px black;
+ }  
+.nlist li a{
+	color: pink;
+	text-decoration: none;
+	text-shadow: 3px 2px black;
+
+}
+.logo img{
+	width: 20%;
+	border:3px solid blue;
+	border-radius: 50%;
+}
+
+.nlist li a:hover{
+ color:tomato;
+ font-size: 40px;
+ text-decoration: underline;
+}
+body{
+	
+	background-image: url('bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sel{
+	display: flex;
+	padding-top: 250px;
+}
+
+.item{
+
+	border: 1px solid white;
+	height: 250px;
+	width: 250px;
+	margin-right: 100px;
+  margin-left: 100px;
+	border-radius: 30px;
+	justify-content: center;
+	text-align: center;
+	font-size: 30px;
+
+	}
+	#login {
+		background: url('acc.jpg');
+		background-size: 240px 240px;
+		}
+
+   #login a{
+   	color:lightpink;
+		text-shadow: 3px 2px black;
+   }
+
+   #cus {
+      background:url('cus1.jpg');
+      background-size: 240px 240px;}
+      #cus a{
+      color:lightpink;
+      text-shadow: 3px 2px black;
+   }
+
+    #trans {
+      background:url('tran.jpg');
+      background-size: 260px 280px;
+  }
+  #trans a{
+      color:lightpink;
+      text-shadow: 3px 2px black;
+   }
+    #login:hover{
+       height: 260px;
+       width: 260px;
+       font-size: 35px;
+       
+    }
+     #cus:hover{
+    	 height: 260px;
+       width: 260px;
+        font-size: 35px;
+    }
+     #trans:hover{
+    	 height: 260px;
+       width: 260px;
+        font-size: 35px;
+    }

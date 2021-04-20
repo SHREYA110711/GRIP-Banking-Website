@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transaction History</title>
+</head>
+<body>
+	<div>
+		<img src="logo.png">TSF BANK
+	</div>
+    <div id="home">
+    	Home
+    </div>
+   <h1>Transaction History</h1>
+   <table border="2" class="center" width="75%">
+  <tr>
+    <td>Sender Account Number</td>
+    <td>Receiver Account Number</td>
+    <td>Amount</td>
+    </tr>
+    <?php
+
+include "dbConn.php"; // Using database connection file here
+
+$records = mysqli_query($db,"select * from transaction"); // fetch data from database
+
+while($data = mysqli_fetch_array($records))
+{
+?>
+  <tr>
+
+  <td><?php echo $data['Sender']; ?></td>
+    <td><?php echo $data['Receiver']; ?></td>
+    <td><?php echo $data['Amount']; ?></td>
+  </tr>	
+<?php
+}
+?>
+</table>
+
+<?php mysqli_close($db); // Close connection ?>
+</body>
+</html>
